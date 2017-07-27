@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.isabela.cadcel.MainActivity"
+    android:background="@drawable/fundo1"
+    android:gravity="center">
+
+
+    <TextView
+        android:id="@+id/editText"
+        android:layout_width="368dp"
+        android:layout_height="90dp"
+        android:ems="10"
+        android:text="CADCEL"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:gravity="center"
+        android:layout_marginBottom="80dp"/>
+
+    <Button
+        android:id="@+id/button10"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="368dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:background="@color/botaoConsulta"
+        android:elevation="1dp"
+        android:onClick="abrirConsulta"
+        android:text="Consulta"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="363dp" />
+
+    <Button
+        android:id="@+id/button12"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="368dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:background="@color/botaoCadastro"
+        android:elevation="1dp"
+        android:onClick="abrirCadastro"
+        android:text="Cadastro"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="461dp" />
+
+    <Button
+        android:id="@+id/button11"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="368dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:background="@color/botaoCadSeguro"
+        android:elevation="1dp"
+        android:onClick="abrirLoginCad"
+        android:text="CAD.Seguro"
+        app:layout_constraintBottom_toTopOf="@+id/button10"
+        tools:layout_editor_absoluteX="8dp" />
+
+
+</android.support.v7.widget.LinearLayoutCompat>
